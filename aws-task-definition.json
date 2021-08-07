@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::257492816994:role/ecsTaskExecutionRole",
+  "executionRoleArn": null,
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -29,7 +29,7 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "257492816994.dkr.ecr.us-east-1.amazonaws.com/aws-ecs-demo-ecr",
+      "image": "729874853647.dkr.ecr.us-east-1.amazonaws.com/aws-ecs-demo-ecr",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -51,11 +51,12 @@
   ],
   "placementConstraints": [],
   "memory": null,
-  "taskRoleArn": "arn:aws:iam::257492816994:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::729874853647:role/ecsTaskExecutionRole",
   "compatibilities": [
+    "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:257492816994:task-definition/aws-ecs-demo-task-definition:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:729874853647:task-definition/aws-ecs-demo-task-definition:1",
   "family": "aws-ecs-demo-task-definition",
   "requiresAttributes": [
     {
@@ -75,12 +76,6 @@
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.task-iam-role"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "ecs.capability.execution-role-ecr-pull"
     }
   ],
   "pidMode": null,
